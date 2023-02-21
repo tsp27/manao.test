@@ -18,8 +18,8 @@
     <header class="header">
         <menu class="header__menu">
             <ul>
-                <li><a href="/reg.php">Registration</a></li>
-                <li><a href="/auth.php">Login</a></li>
+                <li><a href="reg.php">Registration</a></li>
+                <li><a href="auth.php">Login</a></li>
             </ul>
         </menu>
         <div class="header__info">

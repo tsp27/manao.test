@@ -18,8 +18,8 @@
     <header class="header">
         <menu class="header__menu">
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/reg.php">Registration</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="reg.php">Registration</a></li>
             </ul>
         </menu>
         <div class="header__info">
