@@ -27,7 +27,7 @@
             <div>Hello: <?php echo $_COOKIE['login']; ?></div>
             <a class="header__logout logout">Logout</a>
             <?php else : ?>
-            <a class="header__login login" href="/auth.php">Login</a>
+            <a class="header__login login" href="auth.php">Login</a>
             <?php endif; ?>
         </div>  
     </header>
@@ -62,7 +62,7 @@
 
     <?php if ($_SESSION['reg']) : ?>
         <div class="reg-success">
-            Registration successful. Now you can <a href="/auth.php">Login</a>
+            Registration successful. Now you can <a href="auth.php">Login</a>
         </div>
     <?php endif; unset($_SESSION['reg']); ?>
 

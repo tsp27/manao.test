@@ -27,7 +27,7 @@
             <div>Hello: <?php echo $_COOKIE['login']; ?></div>
             <a class="header__logout logout">Logout</a>
             <?php else : ?>
-            <a class="header__login login" href="/auth.php">Login</a>
+            <a class="header__login login" href="auth.php">Login</a>
             <?php endif; ?>
         </div>  
     </header>
