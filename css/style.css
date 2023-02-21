@@ -1,0 +1,91 @@
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.header__menu {
+    padding-left: 0;
+}
+.header__menu ul {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+}
+.header__menu ul li {
+    margin-right: 10px;
+}
+.header__menu ul li:last-child {
+    margin-right: 0;
+}
+.header__info {
+    display: flex;
+    align-items: center;
+}
+.header__logout {
+    margin-left: 20px;
+    background-color: rgb(81, 230, 205);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.header__logout:hover {
+    cursor: pointer;
+    opacity: .5;
+}
+/* EOF Header */
+
+
+/* Registration form */
+.reg-form {
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.reg-form div {
+    margin-bottom: 10px;
+    text-align: center;
+}
+.reg-form div p {
+    margin: 0;
+}
+
+.reg-form input:valid {
+    color: green;
+}
+.reg-form__error  {
+    color: red;
+}
+.reg-form__error_hidden {
+    display: none;
+}
+
+.reg-success {
+    color: green;
+    text-align: center;
+}
+/* EOF Registration form */
+
+
+/* Authorization form */
+.auth-form {
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.auth-form div {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.auth-form__error {
+    margin: 0 !important;
+    text-align: center;
+    color: red;
+}
+.auth-form__error_hidden {
+    display: none;
+}
+/* EOF Authorization form */

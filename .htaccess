@@ -1,0 +1,7 @@
+DirectoryIndex index.php
+
+php_value session.auto_start 1
+
+<Files db.json>  
+    deny from all  
+</Files> 
