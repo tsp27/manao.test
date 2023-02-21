@@ -13,7 +13,7 @@
             $this->data = $data;
             $this->current_login = addslashes($this->data['login']);
             $this->current_pass = md5(addslashes($this->data['pass']) . 'SomethingSalt'); // static salt
-            $this->user = new User($_SERVER['DOCUMENT_ROOT'] . '/db.json'); // if user exists in db
+            $this->user = new User('../db.json'); // if user exists in db
         }
 
         function checkLogin() {
