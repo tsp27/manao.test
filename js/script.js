@@ -26,10 +26,18 @@ if (regForm) {
 
     // check login input for validity
     function checkLogin() {
-        const loginLength = loginInput.value.length;
-               
+        const loginValue = loginInput.value;
+        const loginLength = loginValue.length;
+
+        const regExp = /[\s]/;
+        const checkLogin = regExp.test(loginValue); // check spaces
+
         if (loginLength < 6) {
             showInputError(loginError, 'Минимум 6 символов');
+            return false;
+        }
+        else if (loginLength >= 6 && checkLogin) {
+            showInputError(loginError, 'Не должно быть пробелов');
             return false;
         }
 
