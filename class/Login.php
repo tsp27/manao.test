@@ -17,8 +17,13 @@
         }
 
         function checkLogin() {
+            preg_match('/[\s]/', $this->data['login'], $matches);
+            
             if (!$this->data['login']) {
                 $this->errors['login'] = 'Enter login';
+            }
+            elseif ($matches[0]) {
+                $this->errors['login'] = 'There should be no spaces';
             }
             elseif (strlen($this->data['login']) < 6) {
                 $this->errors['login'] = 'Min length 6 symbol';

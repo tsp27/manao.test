@@ -9,8 +9,16 @@
         }
 
         function checkLogin() {
-            if (strlen($this->data['login']) < 6) {
+            preg_match('/[\s]/', $this->data['login'], $matches);
+            $login_length = strlen($this->data['login']);
+
+            if ($login_length < 6) {
                 $this->errors['login'] = 'Минимум 6 символов';
+            
+                return false;
+            }
+            elseif ($login_length >= 6 && $matches[0]) {
+                $this->errors['login'] = 'Не должно быть пробелов';
             
                 return false;
             }
