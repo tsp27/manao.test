@@ -1,4 +1,4 @@
-php_value session.auto_start 1
+#php_value session.auto_start 1
 
 AddDefaultCharset UTF-8
 

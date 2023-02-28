@@ -1,4 +1,6 @@
 <?php
+    session_start();
+    
     class Register {
 
         private $data = '';

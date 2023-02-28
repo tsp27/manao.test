@@ -1,7 +1,7 @@
 <?php 
-    //session_start(); // задано в htaccess глобально, поэтому так не надо уже
-    //echo $_SESSION['auth']; // тест
-    //echo $_COOKIE['login']; // тест
+    session_start(); // htaccess global in htaccess error on server
+    //echo $_SESSION['auth']; // test
+    //echo $_COOKIE['login']; // test
     require_once 'include/function.php';
 ?>
 <!DOCTYPE html>

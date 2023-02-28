@@ -1,5 +1,5 @@
 <?php 
-    //session_start(); // htaccess global
+    session_start(); // htaccess global in htaccess error on server
     //echo $_SESSION['auth']; // test
     //echo $_COOKIE['login']; // test
     require_once 'include/function.php';
